@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #12161c;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    width: 90%;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(180, 40, 0, 0.35) 0%, #12161c 85.62%), 
+                url('../img/bg.jpg') no-repeat center top / cover;
+    padding-bottom: 60px;
+}
+
+.m-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav {
+    position: relative;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-left: 17px;
+}
+
+.menu-item {
+    margin-right: 25px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.user {
+    margin-left: auto;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+
+.film {
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.film-title-small {
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.5;
+}
+
+.film-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+
+.film-tarailer {
+    margin: auto;
+}
+
+.film-details {
+    display: flex;;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.rating-icon {
+    margin-right: 14px;
+}
+
+.rating-strong {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.date-block {
+    display: flex;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.date-item:hover {
+    background-color: #ff3c00;
+    color: #12161c;
+}
+
+.month {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.week {
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.cinema select {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+    width: 470px;
+    margin-top: 15px;
+}
+
+.Stime select {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.scheme {
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.scheme-svg {
+    max-width: 1170;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.scheme path.booked {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active {
+    fill: #ff3c00;
+}
+.scheme path.active:hover {
+    fill: #ff3c00;
+}
+
+
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+    margin-right: 15px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    display: block;
+    background: #e94b1b;
+    border-radius: 5px;
+    color: #12161c;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .cinema select {
+        width: 100%;
+    }
+}
+@media(max-width: 990px) {
+    .container {
+        max-width: 750px;
+    }
+    .session {
+        flex-wrap: wrap;
+    }
+    .date {
+        flex-basis: 70%;
+        margin-bottom: 40px;
+    }
+    .Stime{
+        order: 2;
+    }
+    .cinema{
+        order: 3;
+    }
+    .menu-item {
+        margin-right: 20px;
+    }
+}
+@media(max-width: 760px) {
+    .container {
+        max-width: 560px;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background: #12161c;
+        flex-direction: column;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-20%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .menu-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .m-menu {
+        display: block;
+        background: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    }
+    .film-description {
+        margin-right: 30px;
+    }
+    .film {
+        flex-direction: column;
+    }
+    .film-tarailer {
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }  
+}
